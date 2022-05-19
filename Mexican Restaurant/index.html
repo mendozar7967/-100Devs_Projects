@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Blank Template</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+	</head>
+	<body>
+		<header>
+			<section class="top-nav">
+				<div>
+				  El Pueblo Mexican Grill
+				</div>
+				<input id="menu-toggle" type="checkbox" />
+				<label class='menu-button-container' for="menu-toggle">
+					<div class='menu-button'></div>
+			  	</label>
+				<ul class="menu">
+				  <li><a href=#aboutus class="hidden menuAbout">About Us</a></li>
+				  <li><a href=#aboutus class="hidden menuMenu">Menu</a></li>
+				  <li><a href=#aboutus class="hidden menuFind">Find Us</a></li>
+				  <li><a href=#aboutus class="hidden menuOrder">Order Now</a></li>
+				</ul>
+			  </section>
+		</header>
+		<main>
+			<section class="titleSection">
+				<h1>El Pueblo Mexican Grill</h1>
+			</section>
+			<section class="ourStory">
+				<h2>- Discover Our Story -</h2>
+				<p>Inspired by the meals passed down through generations, we set out to capture the flavor, culture, and passion we enjoyed growing up, in order to share it with you.</p>
+				<p>Focused on providing only the freshest ingredients and best service possible, let us dazzle your taste buds with Mexican cuisine that will instantly remind you of abuela's cooking!</p>
+				<button type="button">Discover Menu </button>
+			</section>
+			<section class="cuisineSection">
+				<h2>- Our Specialty Cuisine -</h2>
+				<div>
+					<img src="Images/Tacos+Al+Pastor+2.jpg" alt="tacos de al pastor">
+					<img class="hidden" src="Images/Mole de Pollo.webp" alt="mole de pollo">
+					<img class="hidden" src="Images/Enchiladas-Verde-de-Pollo-1-1.jpg" alt="enchiladas verdes">
+					<img class="hidden" src="Images/fajitas de res y camaron.jpg" alt="fajitas de res y camaron">
+				</div>
+			</section>
+				<section class="hoursSection">
+					<h2>- Opening Hours -</h2>
+					<img src="Images/icons8-phone-50.png" alt="phone logo">
+					<span>+12345 678 910</span>
+					<div>
+						<span>Monday to Tuesday</span>
+						<span>09:00 am - 22:00 pm</span>
+					</div>
+					<div>
+						<span>Friday to Sunday</span>
+						<span>11:00 am -  20:00 pm</span>
+					</div>
+				</section>
+				<section class="locationSection">
+					<h2>- Location -</h2>
+					<div id="map"></div>
+					<script
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+					defer
+					></script>
+				</section>
+			</section>
+			<section>
+				<h2>- Customers Say -</h2>
+				<img src="#" alt="man with glasses">
+				<h4>Mr. John Smith</h4>
+				<span>Art Director</span>
+				<img src="#" alt="5 stars">
+				<p>"Awesome food! Reminds me of home! Cannot wait to come back again."</p>
+			</section>
+			<script type="text/javascript" src="main.js"></script>
+		</main>
+	</body>
+</html>
