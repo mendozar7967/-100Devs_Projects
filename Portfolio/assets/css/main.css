@@ -2791,6 +2791,13 @@ input, select, textarea {
 			line-height: 1.5em;
 			margin: 0.25em 0 0 0;
 		}
+		#header img {
+			z-index: 1;
+			position: relative;
+			background: #4eb980;
+			height: 20em;
+			border-radius: 10%;
+		}
 
 /* Footer */
 
