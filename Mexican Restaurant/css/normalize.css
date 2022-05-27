@@ -496,7 +496,7 @@ button:hover{
 }
 .titleSection{
   display:flex;
-  background-image: url('Images/hybrid-storytellers-kiteYO5q9MM-unsplash.jpg');
+  background-image: url("../Images/hybrid-storytellers-kiteYO5q9MM-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 -175px;
@@ -519,18 +519,88 @@ h1{
   padding: .5rem 1rem;
 }
 /*-------OUR SPECIALTY CUISINE SECTION-------*/
+.cuisineSection{
+  display:flex;
+}
+.carousel-container {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.navigation .prev {
+  position: absolute;
+  z-index: 10;
+  font-size: 25px;
+  top: 40%;
+  left: 10px;
+  font-weight: 700;
+}
+.navigation .next {
+  right: 10px;
+  position: absolute;
+  font-size: 25px;
+  z-index: 10;
+  top: 40%;
+}
+.navigation .nav-btn {
+  background: rgba(255, 255, 255, 0.55);
+  cursor: pointer;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+.navigation .nav-btn:hover {
+  background: white;
+}
+
 .titleSection, .cuisineSection{
   background-color: rgb(226, 226, 226);
   padding: .5rem 1rem;
 }
-img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
+.carousel {
+  margin-top: 20px;
+  transition: all 0.3s ease;
+
 }
+.carousel img {
+  padding: 2em;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.item {
+  position: absolute;
+  display: none;
+}
+
+.main {
+  display: flex;
+}
+.caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 0.3);
+  height: 35px;
+}
+
 /*------OPENING HOURS SECTION-------*/
 .hoursSection img{
+  display:flex;
+  justify-content: center;
+  align-items: center;
   width:50px;
 }
 .hoursSection span{
