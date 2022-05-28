@@ -31,37 +31,29 @@ function initMap() {
   window.initMap = initMap;
   
 //Slider Functionality
+let slideIndex=1;
+showSlides(slideIndex);
 
-const prev = document.querySelector('.prev');
-const next = document.querySelector('.next');
-const images = document.querySelector('.carousel').children;
-const totalImages = images.length;
-let index = 0;
+//Next/Previous controls
+function plusSlides(n){
+  showSlides(slideIndex += n);
+}
+//thumnail image controls
+function currentSlide(n){
+  showSlides(slideIndex = n);
+}
 
-prev.addEventListener('click', () => {
-  nextImage('next');
-})
-
-next.addEventListener('click', () => {
-  nextImage('prev');
-})
-
-function nextImage(direction) {
-  if(direction == 'next') {
-    index++;
-    if(index == totalImages) {
-      index = 0;
-    }
-  } else {
-    if(index == 0) {
-      index = totalImages - 1;
-    } else {
-      index--;
-    }
+function showSlides(n){
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {
+    slideIndex =1
   }
-
-  for(let i = 0; i < images.length; i++) {
-    images[i].classList.remove('main');
+  if (n < 1) {
+    slideIndex = slides.length
   }
-  images[index].classList.add('main');
+  for (i = 0; i < slides.length; i++){
+    slides[i].style.display = "none"
+  }
+  slides[slideIndex-1].style.display = "block"
 }
