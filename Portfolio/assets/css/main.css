@@ -2242,6 +2242,7 @@ input, select, textarea {
 				-webkit-transform: translateZ(1em);
 				-ms-transform: translateZ(1em);
 				transform: translateZ(1em);
+				object-fit: fill;
 			}
 
 			.image.icon:hover:after {
@@ -2467,7 +2468,7 @@ input, select, textarea {
 			}
 
 				ul.icons li a:hover, ul.icons li span:hover {
-					background: rgba(224, 224, 224, 0.15);
+					background: rgba(224, 224, 224, 0.6);
 				}
 
 /* Table */
@@ -2675,6 +2676,7 @@ input, select, textarea {
 				.feature.left .image img {
 					right: 0;
 					top: 0;
+					width:100%
 				}
 
 			.feature.left .content {
@@ -2692,6 +2694,7 @@ input, select, textarea {
 				.feature.right .image img {
 					left: 0;
 					top: 0;
+					width:100%
 				}
 
 			.feature.right .content {
